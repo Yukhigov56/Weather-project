@@ -19,7 +19,6 @@ document.body.append(container);
 
 async function weather() {
   try {
-    console.log(input.value);
     let response = await fetch(
       `http://api.weatherapi.com/v1/current.json?key=815d8d58ed8249439da161543241210&q=${input.value}`
     );
